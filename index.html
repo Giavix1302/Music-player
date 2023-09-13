@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="background-app"></div>
+    <div class="music-player">
+        <header class="header">
+            <h1 class="header__heading">HOME</h1>
+            <div class="header__search">
+                <input type="text" class="input-search" placeholder="What do you want to list">
+                <a href="" class="btn btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </header>
+
+        <div class="line"></div>
+
+        <div class="wrap-content">
+            <div class="player">
+                <h2 class="player__header">#Song</h2>
+                <div class="player-body">
+                    <div class="player__heading">
+                        <h3 class="player-body__name-song">ID 072019</h3>
+                        <p class="player-body__author">W/n</p>
+                    </div>
+                    <div class="cd">
+                        <img src="./assets/author/no1-Wn.png" alt="" class="cd__cd-thumb">
+                    </div>
+        
+                    <!-- Control -->
+                    <div class="control">
+                        <div class="btn btn-random">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                        <div class="btn btn-prev">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </div>
+                        <div class="btn btn-toggle-play">
+                            <i class="fa-solid fa-play"></i>
+                            <i class="fa-solid fa-pause"></i>
+                        </div>
+                        <div class="btn btn-next">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </div>
+                        <div class="btn btn-repeat">
+                            <i class="fa-solid fa-repeat"></i>
+                        </div>
+                    </div>
+                </div>
+                <input type="range" class="progress" value="0" step="1" min="0" max="200">
+            </div>
+            <div class="playlist">
+                <h2 class="playlist__header">#Your playlist</h2>
+                <ul class="list-songs">
+                    <li class="item-song">
+                        <img src="" alt="" class="item-song__img">
+                        <div class="item-song__info">
+                            <h2 class="item-song__name">ID 072019</h2>
+                            <p class="item-song__author">W/n</p>
+                        </div>
+                        <div class="item-song__time">3:20</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./music-player.js"></script>
+</body>
+</html>
