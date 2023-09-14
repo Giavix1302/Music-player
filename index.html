@@ -47,7 +47,7 @@
         <div class="line"></div>
 
         <div class="wrap-content">
-            <div class="player">
+            <div class="player playing">
                 <h2 class="player__header">#Song</h2>
                 <div class="player-body">
                     <div class="player__heading">
@@ -57,40 +57,55 @@
                     <div class="cd">
                         <img src="./assets/author/no1-Wn.png" alt="" class="cd__cd-thumb">
                     </div>
-        
-                    <!-- Control -->
-                    <div class="control">
-                        <div class="btn btn-random">
-                            <i class="fa-solid fa-shuffle"></i>
-                        </div>
-                        <div class="btn btn-prev">
-                            <i class="fa-solid fa-backward-step"></i>
-                        </div>
-                        <div class="btn btn-toggle-play">
-                            <i class="fa-solid fa-play"></i>
-                            <i class="fa-solid fa-pause"></i>
-                        </div>
-                        <div class="btn btn-next">
-                            <i class="fa-solid fa-forward-step"></i>
-                        </div>
-                        <div class="btn btn-repeat">
-                            <i class="fa-solid fa-repeat"></i>
+
+                    <div class="background-control">
+                        <input type="range" class="progress" value="0" step="1" min="0" max="200">
+            
+                        <!-- Control -->
+                        <div class="control">
+                            <div class="btn btn-random">
+                                <i class="fa-solid fa-shuffle"></i>
+                            </div>
+                            <div class="btn btn-prev">
+                                <i class="fa-solid fa-backward-step"></i>
+                            </div>
+                            <div class="btn btn-toggle-play">
+                                <i class="fa-solid fa-play icon-play"></i>
+                                <i class="fa-solid fa-pause icon-pause"></i>
+                            </div>
+                            <div class="btn btn-next">
+                                <i class="fa-solid fa-forward-step"></i>
+                            </div>
+                            <div class="btn btn-repeat">
+                                <i class="fa-solid fa-repeat"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <input type="range" class="progress" value="0" step="1" min="0" max="200">
+                
             </div>
             <div class="playlist">
                 <h2 class="playlist__header">#Your playlist</h2>
                 <ul class="list-songs">
                     <li class="item-song">
-                        <img src="" alt="" class="item-song__img">
+                        <img src="./assets/author/no1-Wn.png" alt="" class="item-song__img">
                         <div class="item-song__info">
-                            <h2 class="item-song__name">ID 072019</h2>
+                            <h4 class="item-song__name">ID 072019</h4>
                             <p class="item-song__author">W/n</p>
                         </div>
                         <div class="item-song__time">3:20</div>
                     </li>
+
+                    <li class="item-song">
+                        <img src="./assets/author/no1-Wn.png" alt="" class="item-song__img">
+                        <div class="item-song__info">
+                            <h4 class="item-song__name">ID 072019</h4>
+                            <p class="item-song__author">W/n</p>
+                        </div>
+                        <div class="item-song__time">3:20</div>
+                    </li>
+
+                    
                 </ul>
             </div>
         </div>
