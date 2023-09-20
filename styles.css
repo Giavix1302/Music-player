@@ -5,7 +5,7 @@
 }
 
 :root {
-    --gradient-color: linear-gradient(90deg, rgba(228,108,238,1) 0%, rgba(84,240,213,1) 100%);
+    --gradient-color: linear-gradient(to left, rgba(255,95,160,1) 0%, rgba(121,185,241,1) 33%, rgba(252,181,248,1) 67%, rgba(57,245,222,1) 100%);
 }
 
 html {
@@ -48,10 +48,31 @@ html {
 /* App */
 .background-app {
     height: 100vh;
-    filter: blur(200px);
+    
     background: var(--gradient-color); 
+    
+}
+
+.background-app {
+    /* filter: blur(200px); */
+    background: var(--gradient-color);
+    background-size: 400% 400%;
+    height: 100vh;
     z-index: -1;
-    position: relative ;
+    position: relative;
+    -webkit-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 .music-player {
